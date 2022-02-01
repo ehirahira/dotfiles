@@ -1,0 +1,30 @@
+[init]	
+	defaultBranch = main
+[push]
+	default = current
+[alias]
+	br = branch
+	ck = checkout
+	ckb = checkout -b
+
+	stals = stash list
+	stap = stash apply stash@{0}
+	stadro = stash drop stash@{0}
+
+	st = status
+
+	adp = add -p
+	res = restore
+	restage = restore --staged
+
+	cm = commit
+	cmame = commit --amend
+	ps = push
+
+	lone = log --oneline
+
+	rb = rebase
+	rbi = rebase -i
+	rbcon = rebase --continue
+
+	chp = cherry-pick
