@@ -28,3 +28,5 @@
 	rbcon = rebase --continue
 
 	chp = cherry-pick
+[core]
+	ignorecase = false
