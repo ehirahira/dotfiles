@@ -11,5 +11,8 @@ GIT_PS1_SHOWSTASHSTATE=true
 GIT_PS1_SHOWUNTRACKEDFILES=true
 GIT_PS1_SHOWUPSTREAM=auto
 setopt PROMPT_SUBST ; PS1='[%n@%m %c$(__git_ps1 " (%s)")]\$ '
-
 source ~/.zsh/git-prompt.sh
+
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+fpath=($(brew --prefix)/share/zsh/site-functions $fpath)
+autoload -U compinit && compinit
